@@ -1,0 +1,46 @@
+.items-nav {
+  color: white;
+}
+ul li {
+  padding: 18px;
+}
+ul li:hover {
+  background-color: #1e7ca8;
+}
+.container {
+  min-height: 300px;
+}
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+textarea {
+  resize: none;
+}
+form div {
+  display: flex;
+  padding: 20px;
+  min-width: 800px;
+}
+form div label {
+  flex-basis: 20%;
+}
+form div :not(label) {
+  flex-basis: 70%;
+}
+@keyframes example {
+  0%   {opacity: 0 ;}
+  25%  {opacity: 0.2}
+  50%  { opacity: 0.4}
+  75%  { opacity: 0.7}
+  100% { opacity: 0.9}
+}
+
+.home {
+  height: 100px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}

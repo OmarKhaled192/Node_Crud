@@ -1,0 +1,14 @@
+<div class="card my-5 text-center w-75 mx-auto">
+  <div class="card-header  bg-primary text-light"  style="--bs-bg-opacity: .7;">
+    <%= event.title %>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%= event.title %></h5>
+    <p class="card-text">Event Price is <%= event.price %></p>
+    <hr class="w-50 mx-auto">
+    <p>
+      <%= event.description %>
+    </p>
+    <a href="/events" class="btn btn-outline-primary">Return to events</a>  
+  </div>
+</div>

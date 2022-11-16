@@ -1,0 +1,32 @@
+<section class="my-3 p-3">
+
+</section>
+
+<section class = "container scrolling  ">
+  <table class="table table-hovered table-bordered table-striped  text-center" >
+    <thead class="text-white m-9 bg-primary text-light"  style="--bs-bg-opacity: .7;">
+      <th>id</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Action</th>
+    </thead >
+    <tbody >
+      <!-- iterate over events 
+        create tr and add data  -->
+        <% for (let event of events ) { %>
+          <tr>
+            <td><%= event.id %></td>
+            <td><%= event.title %></td>
+            <td><%= event.price %></td>
+            <td><%= event.description %> </td>
+            <td style="display: flex; justify-content: space-evenly">
+              <a href="/events/<%=event.id%>" class="btn btn-white btn-outline-dark"><i class="far fa-eye"></i> Show</a>
+              <a href="/events/<%=event.id%>/edit" class="btn btn-white btn-outline-success"><i class="fas fa-edit"></i>Edit</a>
+              <a href="/events/<%=event.id%>/delete" class="btn btn-white btn-outline-danger" ><i class="fas fa-trash"></i> Delete</a>
+            </td>
+          </tr>
+        <% } %>
+    </tbody>
+  </table>
+</section>
