@@ -21,6 +21,6 @@
 ![CreateEvent](https://user-images.githubusercontent.com/94392724/202254774-ff08f48c-dd3d-40fd-975a-6f9f3c8bd500.png)
 ## > try to delete the event from here
 ![edit](https://user-images.githubusercontent.com/94392724/202252628-52898cdc-25da-4f4e-8922-9db7accc71da.png)
-### the result shown as 
+### >> the result shown as 
 ![delete](https://user-images.githubusercontent.com/94392724/202254076-ea9ac7cc-ebc5-48e8-87e2-5dc5c9f417b9.png)
 - event deleted  **Successfully !**
