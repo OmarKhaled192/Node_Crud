@@ -46,10 +46,11 @@ const db = mongoose.connection;
 //Define MiddleWare to fetch data from user
 app.use(express.urlencoded({extended: false})) // we can use 'bodyParser' here instead of express
 
-// app.use(express.json())
+app.use(express.json())
 
 //Define App Routes 
-app.use(require("./routes/web"))
+app.use('/',require("./routes/web"))
+app.use('/api',require("./routes/api"))
 
 
 // Run App server
